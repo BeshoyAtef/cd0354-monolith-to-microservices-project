@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: udgram-frontend
-        image: beshosmil/udagram-frontend
+        image: beshosmile/udagram-frontend
         imagePullPolicy: Always
         ports:
         - containerPort: 80
