@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: udgram_frontend
+  labels:
+    service: udgram_frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      service: udgram_frontend
+  template:
+    metadata:
+      labels:
+        service: udgram_frontend
+        api: external
+    spec:
+      containers:
+      - name: udgram_frontend
+        image: beshosmil/udagram-frontend
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+      restartPolicy: Always
