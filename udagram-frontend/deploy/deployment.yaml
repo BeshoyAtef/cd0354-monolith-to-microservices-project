@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: frontend-feed
+  name: frontend
   labels:
-    service: frontend-feed
+    service: frontend
 spec:
   replicas: 1
   selector:
     matchLabels:
-      service: frontend-feed
+      service: frontend
   template:
     metadata:
       labels:
-        service: frontend-feed
+        service: frontend
         api: external
     spec:
       containers:
-      - name: frontend-feed
+      - name: frontend
         image: beshosmile/udagram-frontend
         imagePullPolicy: Always
         resources:
