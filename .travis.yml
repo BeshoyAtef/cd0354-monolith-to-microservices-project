@@ -22,11 +22,11 @@ script:
   - docker tag udagram-api-feed beshosmile/udagram-api-feed
   - docker tag udagram-api-user beshosmile/udagram-api-user
   - docker tag reverseproxy beshosmile/reverseproxy
-  - docker tag udagram-frontend beshosmile/udagram-frontend:v13
+  - docker tag udagram-frontend beshosmile/udagram-frontend
 
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker push beshosmile/udagram-api-feed
   - docker push beshosmile/udagram-api-user
   - docker push beshosmile/reverseproxy
-  - docker push beshosmile/udagram-frontend:v13
+  - docker push beshosmile/udagram-frontend
