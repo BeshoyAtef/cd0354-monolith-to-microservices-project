@@ -15,7 +15,7 @@ spec:
         service: backend-user
     spec:
       containers:
-      - image: beshosmile/udagram-frontend
+      - image: beshosmile/udagram-api-user
         name: backend-user
         imagePullPolicy: Always  
         resources:
