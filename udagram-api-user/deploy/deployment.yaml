@@ -15,15 +15,15 @@ spec:
         service: udgram-backend-feed
     spec:
       containers:
-      - image: beshosmile/udagram-api-user
+      - image: beshosmile/udagram-frontend
         name: udgram-backend-feed
         imagePullPolicy: Always  
         resources:
           requests:
-            memory: "4024Mi"
+            memory: "2024Mi"
             cpu: "250m"
           limits:
-            memory: "5024Mi"
+            memory: "4024Mi"
             cpu: "500m"                  
         env:
         - name: URL
