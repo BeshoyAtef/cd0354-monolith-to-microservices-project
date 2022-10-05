@@ -7,6 +7,6 @@ data:
   AWS_REGION: us-east-1
   AWS_PROFILE: default
   JWT_SECRET: testingjwt
-  URL: http://a63f122a57b42491cac752d86d85d126-1822282173.us-east-1.elb.amazonaws.com
+  URL: http://a10f8130ca43141cea2b49ae24fe4eba-2121701201.us-east-1.elb.amazonaws.com
 metadata:
   name: env-config
