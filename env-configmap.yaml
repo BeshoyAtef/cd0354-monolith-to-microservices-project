@@ -1,7 +1,5 @@
 apiVersion: v1
 kind: ConfigMap
-metadata:
-  name: env-config
 data:
   POSTGRES_HOST: udgramcourse.crrdlimrytxp.us-east-1.rds.amazonaws.com
   POSTGRES_DB: postgres
@@ -10,3 +8,5 @@ data:
   AWS_PROFILE: default
   JWT_SECRET: testingjwt
   URL: http://a63f122a57b42491cac752d86d85d126-1822282173.us-east-1.elb.amazonaws.com
+metadata:
+  name: env-config
