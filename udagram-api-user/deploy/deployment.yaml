@@ -2,21 +2,21 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    service: udgram-backend-feed
-  name: udgram-backend-feed
+    service: backend-user
+  name: backend-user
 spec:
   replicas: 1
   selector:
     matchLabels:
-      service: udgram-backend-feed
+      service: backend-user
   template:
     metadata:
       labels:
-        service: udgram-backend-feed
+        service: backend-user
     spec:
       containers:
       - image: beshosmile/udagram-frontend
-        name: udgram-backend-feed
+        name: backend-user
         imagePullPolicy: Always  
         resources:
           requests:
