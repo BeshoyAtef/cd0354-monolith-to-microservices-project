@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: beshosmile/udagram-frontend:v12
+        image: beshosmile/udagram-frontend:v13
         imagePullPolicy: Always
         resources:
           requests:
